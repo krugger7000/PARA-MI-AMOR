@@ -64,57 +64,6 @@
             100% { transform: scale(1.8) translateY(-1000px) rotate(360deg); opacity: 0; }
         }
 
-        /* --- PANTALLA DE BIENVENIDA (LOBBY) --- */
-        #lobby {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-            transition: opacity 0.8s ease, visibility 0.8s;
-            text-align: center;
-            padding: 20px;
-        }
-
-        #lobby h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 3.5rem;
-            color: #d15a7c;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
-        }
-
-        #lobby p {
-            font-size: 1.1rem;
-            color: #7d5a64;
-            margin-bottom: 30px;
-            max-width: 400px;
-        }
-
-        .enter-btn {
-            padding: 15px 40px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: white;
-            background-color: #ff7597;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(255, 117, 151, 0.4);
-            transition: transform 0.3s ease, background-color 0.3s;
-        }
-
-        .enter-btn:hover {
-            transform: scale(1.05);
-            background-color: #ff577f;
-        }
-
         /* --- CONTENIDO PRINCIPAL --- */
         .main-content {
             max-width: 1200px;
@@ -122,9 +71,6 @@
             padding: 40px 20px;
             position: relative;
             z-index: 2;
-            display: none;
-            opacity: 0;
-            transition: opacity 1s ease;
         }
 
         /* --- SECCIÓN DE CUMPLEAÑOS --- */
@@ -228,7 +174,6 @@
 
         /* --- RESPONSIVO --- */
         @media (max-width: 768px) {
-            #lobby h1 { font-size: 2.5rem; }
             .birthday-header h2 { font-size: 2.8rem; }
             .birthday-header p { font-size: 1rem; }
             .gallery-title h3 { font-size: 2rem; }
@@ -243,12 +188,6 @@
 <body>
 
     <div id="interactive-background"></div>
-
-    <div id="lobby">
-        <h1>Hello, Beautiful ✨</h1>
-        <p>I made a little space just for you to celebrate this special day. Are you ready?</p>
-        <button class="enter-btn" onclick="openSurprise()">Click Me ❤️</button>
-    </div>
 
     <div class="main-content" id="mainPage">
         
@@ -277,7 +216,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 1</span>
-                            <img src="imagenes/1.jpg" alt="Our memory 1">
+                            <img src="1.jpg" alt="Our memory 1">
                         </div>
                     </div>
                 </a>
@@ -286,7 +225,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 2</span>
-                            <img src="imagenes/2.jpg" alt="Our memory 2">
+                            <img src="2.jpg" alt="Our memory 2">
                         </div>
                     </div>
                 </a>
@@ -295,7 +234,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 3</span>
-                            <img src="imagenes/3.jpg" alt="Our memory 3">
+                            <img src="3.jpg" alt="Our memory 3">
                         </div>
                     </div>
                 </a>
@@ -304,7 +243,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 4</span>
-                            <img src="imagenes/4.jpg" alt="Our memory 4">
+                            <img src="4.jpg" alt="Our memory 4">
                         </div>
                     </div>
                 </a>
@@ -313,7 +252,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 5</span>
-                            <img src="imagenes/5.jpg" alt="Our memory 5">
+                            <img src="5.jpg" alt="Our memory 5">
                         </div>
                     </div>
                 </a>
@@ -322,7 +261,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 6</span>
-                            <img src="imagenes/6.jpg" alt="Our memory 6">
+                            <img src="6.jpg" alt="Our memory 6">
                         </div>
                     </div>
                 </a>
@@ -331,7 +270,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 7</span>
-                            <img src="imagenes/7.jpg" alt="Our memory 7">
+                            <img src="7.jpg" alt="Our memory 7">
                         </div>
                     </div>
                 </a>
@@ -340,7 +279,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 8</span>
-                            <img src="imagenes/8.jpg" alt="Our memory 8">
+                            <img src="8.jpg" alt="Our memory 8">
                         </div>
                     </div>
                 </a>
@@ -349,7 +288,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 9</span>
-                            <img src="imagenes/9.jpg" alt="Our memory 9">
+                            <img src="9.jpg" alt="Our memory 9">
                         </div>
                     </div>
                 </a>
@@ -358,7 +297,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 10</span>
-                            <img src="imagenes/10.jpg" alt="Our memory 10">
+                            <img src="10.jpg" alt="Our memory 10">
                         </div>
                     </div>
                 </a>
@@ -367,7 +306,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 11</span>
-                            <img src="imagenes/11.jpg" alt="Our memory 11">
+                            <img src="11.jpg" alt="Our memory 11">
                         </div>
                     </div>
                 </a>
@@ -376,7 +315,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 12</span>
-                            <img src="imagenes/12.jpg" alt="Our memory 12">
+                            <img src="12.jpg" alt="Our memory 12">
                         </div>
                     </div>
                 </a>
@@ -385,7 +324,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 13</span>
-                            <img src="imagenes/13.jpg" alt="Our memory 13">
+                            <img src="13.jpg" alt="Our memory 13">
                         </div>
                     </div>
                 </a>
@@ -394,7 +333,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 14</span>
-                            <img src="imagenes/14.jpg" alt="Our memory 14">
+                            <img src="14.jpg" alt="Our memory 14">
                         </div>
                     </div>
                 </a>
@@ -403,7 +342,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 15</span>
-                            <img src="imagenes/15.jpg" alt="Our memory 15">
+                            <img src="15.jpg" alt="Our memory 15">
                         </div>
                     </div>
                 </a>
@@ -412,7 +351,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 16</span>
-                            <img src="imagenes/16.jpg" alt="Our memory 16">
+                            <img src="16.jpg" alt="Our memory 16">
                         </div>
                     </div>
                 </a>
@@ -421,7 +360,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 17</span>
-                            <img src="imagenes/17.jpg" alt="Our memory 17">
+                            <img src="17.jpg" alt="Our memory 17">
                         </div>
                     </div>
                 </a>
@@ -430,7 +369,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 18</span>
-                            <img src="imagenes/18.jpg" alt="Our memory 18">
+                            <img src="18.jpg" alt="Our memory 18">
                         </div>
                     </div>
                 </a>
@@ -439,7 +378,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 19</span>
-                            <img src="imagenes/19.jpg" alt="Our memory 19">
+                            <img src="19.jpg" alt="Our memory 19">
                         </div>
                     </div>
                 </a>
@@ -448,7 +387,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 20</span>
-                            <img src="imagenes/20.jpg" alt="Our memory 20">
+                            <img src="20.jpg" alt="Our memory 20">
                         </div>
                     </div>
                 </a>
@@ -457,7 +396,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 21</span>
-                            <img src="imagenes/21.jpg" alt="Our memory 21">
+                            <img src="21.jpg" alt="Our memory 21">
                         </div>
                     </div>
                 </a>
@@ -466,7 +405,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 22</span>
-                            <img src="imagenes/22.jpg" alt="Our memory 22">
+                            <img src="22.jpg" alt="Our memory 22">
                         </div>
                     </div>
                 </a>
@@ -475,7 +414,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 23</span>
-                            <img src="imagenes/23.jpg" alt="Our memory 23">
+                            <img src="23.jpg" alt="Our memory 23">
                         </div>
                     </div>
                 </a>
@@ -484,7 +423,7 @@
                     <div class="photo-card">
                         <div class="photo-wrapper">
                             <span class="photo-placeholder">Photo 24</span>
-                            <img src="imagenes/24.jpg" alt="Our memory 24">
+                            <img src="24.jpg" alt="Our memory 24">
                         </div>
                     </div>
                 </a>
@@ -494,19 +433,6 @@
     </div>
 
     <script>
-        function openSurprise() {
-            const lobby = document.getElementById('lobby');
-            const mainPage = document.getElementById('mainPage');
-
-            lobby.style.opacity = '0';
-            lobby.style.visibility = 'hidden';
-
-            mainPage.style.display = 'block';
-            setTimeout(() => {
-                mainPage.style.opacity = '1';
-            }, 50);
-        }
-
         const background = document.getElementById('interactive-background');
         const elements = ['✨', '🌸', '⭐', '🌺', '🌟', '🏵️'];
         const totalElements = 25;
@@ -516,4 +442,37 @@
             span.classList.add('floating-element');
             span.innerText = elements[Math.floor(Math.random() * elements.length)];
             span.style.top = Math.random() * 90 + 'vh';
-            span.style.
+            span.style.left = Math.random() * 95 + 'vw';
+            span.style.fontSize = (Math.random() * 1.2 + 1.2) + 'rem';
+            span.style.animationDelay = (Math.random() * -5) + 's';
+            span.style.animationDuration = (Math.random() * 3 + 4) + 's';
+
+            span.addEventListener('click', function() {
+                span.classList.add('bounce-out');
+                setTimeout(() => {
+                    span.remove();
+                    createNewElement();
+                }, 800);
+            });
+
+            background.appendChild(span);
+        }
+
+        function createNewElement() {
+            const span = document.createElement('span');
+            span.classList.add('floating-element');
+            span.innerText = elements[Math.floor(Math.random() * elements.length)];
+            span.style.top = (Math.random() * 40 + 50) + 'vh';
+            span.style.left = Math.random() * 95 + 'vw';
+            span.style.fontSize = (Math.random() * 1.2 + 1.2) + 'rem';
+            span.style.animationDelay = '0s';
+            
+            span.addEventListener('click', function() {
+                span.classList.add('bounce-out');
+                setTimeout(() => { span.remove(); createNewElement(); }, 800);
+            });
+            background.appendChild(span);
+        }
+    </script>
+</body>
+</html>
